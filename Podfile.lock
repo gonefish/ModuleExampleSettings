@@ -1,0 +1,14 @@
+PODS:
+  - GQModule (0.1.0)
+
+DEPENDENCIES:
+  - GQModule (from `../GQModule/`)
+
+EXTERNAL SOURCES:
+  GQModule:
+    :path: "../GQModule/"
+
+SPEC CHECKSUMS:
+  GQModule: e9ef6b5372fd1097279421be482d1ceecbd7f876
+
+COCOAPODS: 0.39.0
