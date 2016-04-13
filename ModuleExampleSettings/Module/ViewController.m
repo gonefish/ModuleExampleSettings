@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SettingsModule.h"
 
 @interface ViewController ()
 

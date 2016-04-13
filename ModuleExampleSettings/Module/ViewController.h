@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SettingsModule.h"
-#import "GQModuleResponse.h"
+
 
 @interface ViewController : UIViewController
 
