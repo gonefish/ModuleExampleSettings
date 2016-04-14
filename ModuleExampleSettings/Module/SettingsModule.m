@@ -7,6 +7,9 @@
 //
 
 #import "SettingsModule.h"
+#import "ViewController.h"
+#import "NSBundle+Settings.h"
+#import "UIStoryboard+Settings.h"
 
 @implementation SettingsModule
 
@@ -18,7 +21,7 @@
 - (id)performActionWithIdentifier:(NSString *)identifier options:(NSDictionary *)options
 {
     if ([identifier isEqualToString:GQModulePortalViewControllerIdentifier]) {
-        return [[UIStoryboard storyboardWithName:@"SettingsMain" bundle:nil] instantiateInitialViewController];
+        return [[UIStoryboard settingsStoryboard] instantiateInitialViewController];
     } else {
         return [[NSUserDefaults standardUserDefaults] objectForKey:@"SettingsModuleText"];
     }
