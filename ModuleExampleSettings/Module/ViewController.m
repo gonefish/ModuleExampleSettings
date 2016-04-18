@@ -9,9 +9,15 @@
 #import "ViewController.h"
 #import "SettingsModule.h"
 
+#import <GQModularize/GQModuleCenter.h>
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+
+@property (weak, nonatomic) id observer;
 
 @end
 
@@ -29,13 +35,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     self.textField.text = [[SettingsModule invokeWithIdentifier:@"SettingsModuleText"] gq_string];
+    
+    __weak typeof(self)weakSelf = self;
+    
+    self.observer = [GQModuleCenter addObserverForEventName:@"ListCount"
+                                                usingBlock:^(id  _Nonnull updateValue) {
+                                                    weakSelf.countLabel.text = updateValue;
+                                                }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    [GQModuleCenter removeObserver:self.observer];
 }
 
 @end

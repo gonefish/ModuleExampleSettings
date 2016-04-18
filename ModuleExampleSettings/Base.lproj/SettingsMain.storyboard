@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="squ-6m-I5N">
-                                <rect key="frame" x="20" y="40" width="496" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="squ-6m-I5N">
+                                <rect key="frame" x="89" y="40" width="426.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="lGE-Ip-DLD"/>
                                 </constraints>
@@ -37,24 +37,52 @@
                                     <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z68-7q-slI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hT-nZ-7mV">
+                                <rect key="frame" x="20" y="44" width="49.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Count：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIM-1c-NHR">
+                                <rect key="frame" x="20" y="90" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LK-4n-uMX">
+                                <rect key="frame" x="120" y="90" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6LK-4n-uMX" firstAttribute="centerY" secondItem="DIM-1c-NHR" secondAttribute="centerY" id="4V9-Vt-MkQ"/>
                             <constraint firstItem="squ-6m-I5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="AZG-TJ-zQi"/>
                             <constraint firstItem="B1c-yk-hVZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="CcG-c1-iCk"/>
                             <constraint firstItem="B1c-yk-hVZ" firstAttribute="leading" secondItem="squ-6m-I5N" secondAttribute="trailing" constant="20" id="DpE-Gm-ceF"/>
+                            <constraint firstItem="DIM-1c-NHR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Fct-FO-v5b"/>
                             <constraint firstItem="squ-6m-I5N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="JlS-uJ-Qq1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="B1c-yk-hVZ" secondAttribute="trailing" constant="10" id="NuY-aF-cfJ"/>
                             <constraint firstItem="squ-6m-I5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="R2h-6p-aLK"/>
                             <constraint firstAttribute="trailing" secondItem="B1c-yk-hVZ" secondAttribute="trailing" constant="30" id="Ukm-kv-Iny"/>
                             <constraint firstItem="B1c-yk-hVZ" firstAttribute="leading" secondItem="squ-6m-I5N" secondAttribute="trailing" constant="20" id="Vhf-Ea-PSp"/>
+                            <constraint firstItem="3hT-nZ-7mV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Yyc-fp-6iB"/>
+                            <constraint firstItem="3hT-nZ-7mV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="c8a-6g-mEI"/>
+                            <constraint firstItem="6LK-4n-uMX" firstAttribute="leading" secondItem="DIM-1c-NHR" secondAttribute="trailing" constant="5" id="luL-nm-mnr"/>
+                            <constraint firstItem="3hT-nZ-7mV" firstAttribute="centerY" secondItem="squ-6m-I5N" secondAttribute="centerY" id="mJX-Ov-9o8"/>
+                            <constraint firstItem="DIM-1c-NHR" firstAttribute="top" secondItem="squ-6m-I5N" secondAttribute="bottom" constant="20" id="muo-Bm-H3d"/>
                             <constraint firstItem="squ-6m-I5N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ppA-xv-huZ"/>
+                            <constraint firstItem="squ-6m-I5N" firstAttribute="leading" secondItem="3hT-nZ-7mV" secondAttribute="trailing" constant="20" id="yNf-pC-5A3"/>
                             <constraint firstItem="B1c-yk-hVZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="z9Q-eR-NnT"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="c8a-6g-mEI"/>
                                 <exclude reference="AZG-TJ-zQi"/>
                                 <exclude reference="JlS-uJ-Qq1"/>
+                                <exclude reference="ppA-xv-huZ"/>
                                 <exclude reference="NuY-aF-cfJ"/>
                                 <exclude reference="Vhf-Ea-PSp"/>
                                 <exclude reference="z9Q-eR-NnT"/>
@@ -62,6 +90,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="6LK-4n-uMX" id="yuG-xC-6eE"/>
                         <outlet property="textField" destination="squ-6m-I5N" id="jMV-dn-Cbf"/>
                     </connections>
                 </viewController>
