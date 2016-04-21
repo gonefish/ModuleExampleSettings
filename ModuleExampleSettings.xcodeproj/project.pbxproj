@@ -16,6 +16,7 @@
 		E38C99C91CB8D8D400A3D215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38C99C71CB8D8D400A3D215 /* LaunchScreen.storyboard */; };
 		E38C99D31CB8E21100A3D215 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C99D21CB8E21100A3D215 /* ViewController.m */; };
 		E38C99D61CB8E22900A3D215 /* SettingsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E38C99D51CB8E22900A3D215 /* SettingsModule.m */; };
+		E3CC40D51CC8B54A001E6BB2 /* GQModuleResponse+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CC40D41CC8B54A001E6BB2 /* GQModuleResponse+Helper.m */; };
 		E48F5EEE8A915C165A562FE0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5418CA956BFE8B092A23530A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,9 @@
 		E38C99D21CB8E21100A3D215 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E38C99D41CB8E22900A3D215 /* SettingsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModule.h; sourceTree = "<group>"; };
 		E38C99D51CB8E22900A3D215 /* SettingsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModule.m; sourceTree = "<group>"; };
+		E3CC40D21CC8B4F7001E6BB2 /* ListItemProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItemProtocol.h; sourceTree = "<group>"; };
+		E3CC40D31CC8B54A001E6BB2 /* GQModuleResponse+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GQModuleResponse+Helper.h"; sourceTree = "<group>"; };
+		E3CC40D41CC8B54A001E6BB2 /* GQModuleResponse+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GQModuleResponse+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,9 @@
 				E302C4911CBF399C004C7D6D /* NSBundle+Settings.m */,
 				E302C4931CBF3A0E004C7D6D /* UIStoryboard+Settings.h */,
 				E302C4941CBF3A0E004C7D6D /* UIStoryboard+Settings.m */,
+				E3CC40D21CC8B4F7001E6BB2 /* ListItemProtocol.h */,
+				E3CC40D31CC8B54A001E6BB2 /* GQModuleResponse+Helper.h */,
+				E3CC40D41CC8B54A001E6BB2 /* GQModuleResponse+Helper.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 				E38C99D61CB8E22900A3D215 /* SettingsModule.m in Sources */,
 				E302C4951CBF3A0E004C7D6D /* UIStoryboard+Settings.m in Sources */,
 				E38C99BB1CB8D8D400A3D215 /* main.m in Sources */,
+				E3CC40D51CC8B54A001E6BB2 /* GQModuleResponse+Helper.m in Sources */,
 				E302C4921CBF399C004C7D6D /* NSBundle+Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

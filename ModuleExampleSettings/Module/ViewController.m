@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SettingsModule.h"
+#import "GQModuleResponse+Helper.h"
 
 #import <GQModularize/GQModuleCenter.h>
 
@@ -18,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
 
 @property (weak, nonatomic) id observer;
+
+@property (weak, nonatomic) IBOutlet UILabel *listItemName;
 
 @end
 
@@ -43,6 +46,10 @@
                                                 usingBlock:^(id  _Nonnull updateValue) {
                                                     weakSelf.countLabel.text = updateValue;
                                                 }];
+    
+    id <ListItem> item = [[SettingsModule invokeWithIdentifier:@"CreateItem"] gq_listItem];
+    
+    self.listItemName.text = [item name];
 }
 
 - (void)didReceiveMemoryWarning {
